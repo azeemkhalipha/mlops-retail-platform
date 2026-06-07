@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/63f0d517906e463481c3ac5c46009e55/artifacts
+end_time: 1780850988383
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: 63f0d517906e463481c3ac5c46009e55
+run_name: linear_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780850985395
+status: 3
+tags: []
+user_id: azeemkhalipha

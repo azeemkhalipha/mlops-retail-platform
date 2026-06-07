@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/e24460e329844199ab8e941f72851159/artifacts
+end_time: 1780850880619
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: e24460e329844199ab8e941f72851159
+run_name: lightgbm_v1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780850874943
+status: 3
+tags: []
+user_id: azeemkhalipha

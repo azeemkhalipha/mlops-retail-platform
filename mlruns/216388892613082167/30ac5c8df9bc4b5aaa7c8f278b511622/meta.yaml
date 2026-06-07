@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/30ac5c8df9bc4b5aaa7c8f278b511622/artifacts
+end_time: 1780851026250
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: 30ac5c8df9bc4b5aaa7c8f278b511622
+run_name: lasso_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780851023224
+status: 3
+tags: []
+user_id: azeemkhalipha

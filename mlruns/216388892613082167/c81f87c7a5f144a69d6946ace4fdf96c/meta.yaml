@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/c81f87c7a5f144a69d6946ace4fdf96c/artifacts
+end_time: 1780851136549
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: c81f87c7a5f144a69d6946ace4fdf96c
+run_name: xgboost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780851132600
+status: 3
+tags: []
+user_id: azeemkhalipha

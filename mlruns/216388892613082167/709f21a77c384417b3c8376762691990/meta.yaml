@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/709f21a77c384417b3c8376762691990/artifacts
+end_time: 1780851006700
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: 709f21a77c384417b3c8376762691990
+run_name: ridge_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780851003748
+status: 3
+tags: []
+user_id: azeemkhalipha

@@ -1,0 +1,8 @@
+artifact_location: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167
+creation_time: 1780849790886
+experiment_id: '216388892613082167'
+last_update_time: 1780849790886
+lifecycle_stage: active
+name: demand_forecasting
+trace_location: null
+workspace: default

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/504a7d3aec7548d6b3e333e219957fa4/artifacts
+end_time: 1780851128468
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: 504a7d3aec7548d6b3e333e219957fa4
+run_name: gradient_boosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780851075677
+status: 3
+tags: []
+user_id: azeemkhalipha
