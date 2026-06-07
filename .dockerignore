@@ -1,0 +1,11 @@
+.env
+.git
+__pycache__
+*.pyc
+data/
+notebooks/
+tests/
+airflow/
+mlruns/
+reports/
+.DS_Store
