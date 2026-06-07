@@ -1,0 +1,92 @@
+<html>
+    <head><title>Drift Report 20260607</title>
+    <style>
+        body  { font-family: Arial; padding: 20px; background: #1a1a2e; color: #eee; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #444; padding: 10px; text-align: left; }
+        th    { background: #16213e; color: #0f3460; color: white; }
+        tr:nth-child(even) { background: #16213e; }
+        .alert { padding: 15px; margin: 15px 0; border-radius: 8px; font-size: 18px; }
+        .red   { background: #3d0000; border-left: 6px solid #ff4444; }
+        .green { background: #003d00; border-left: 6px solid #44bb44; }
+        h1 { color: #e94560; }
+        h2 { color: #0f3460; color: #a8dadc; }
+    </style></head>
+    <body>
+    <h1>Data Drift Report</h1>
+    <p>Date: 20260607 | Features monitored: 7</p>
+    <div class='alert red'>
+        <strong>DRIFT DETECTED</strong> —
+        7/7 features drifted
+        (100.0%) |
+        Retrain needed: YES
+    </div>
+    <h2>Feature Statistics</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Ref Mean</th>
+            <th>Curr Mean</th>
+            <th>KS Statistic</th>
+            <th>P-Value</th>
+            <th>Status</th>
+        </tr>
+        
+        <tr>
+            <td>qty_lag_1</td>
+            <td>25.3335</td>
+            <td>22.25</td>
+            <td>0.0349</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>qty_lag_7</td>
+            <td>25.4557</td>
+            <td>22.2306</td>
+            <td>0.0354</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>qty_lag_30</td>
+            <td>26.286</td>
+            <td>23.6792</td>
+            <td>0.0318</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>qty_rolling_avg_7</td>
+            <td>25.3818</td>
+            <td>22.2262</td>
+            <td>0.0476</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>qty_rolling_avg_30</td>
+            <td>25.6951</td>
+            <td>22.5001</td>
+            <td>0.058</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>qty_rolling_std_7</td>
+            <td>28.7905</td>
+            <td>24.5135</td>
+            <td>0.0423</td>
+            <td>0.0</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+        <tr>
+            <td>daily_revenue</td>
+            <td>41.4777</td>
+            <td>43.0797</td>
+            <td>0.0076</td>
+            <td>0.0007</td>
+            <td style='color:#ff4444;font-weight:bold'>DRIFTED</td>
+        </tr>
+    </table>
+    </body></html>

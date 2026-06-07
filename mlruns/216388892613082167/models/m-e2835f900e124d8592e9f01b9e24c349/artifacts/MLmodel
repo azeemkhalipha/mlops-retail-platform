@@ -1,0 +1,23 @@
+artifact_path: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/models/m-e2835f900e124d8592e9f01b9e24c349/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-e2835f900e124d8592e9f01b9e24c349
+model_size_bytes: 732
+model_uuid: m-e2835f900e124d8592e9f01b9e24c349
+prompts: null
+run_id: 95418cab49904c50b2fa8b2e3e866b6b
+utc_time_created: '2026-06-07 17:52:44.338834'

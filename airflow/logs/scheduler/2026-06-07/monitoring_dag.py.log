@@ -1,0 +1,154 @@
+[2026-06-07T17:53:39.269+0000] {processor.py:161} INFO - Started process (PID=41) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:53:39.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:53:39.272+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:53:39.271+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:53:39.281+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:53:39.286+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:53:39.286+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:53:39.300+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:53:39.299+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-06 00:00:00+00:00, run_after=2026-06-07 00:00:00+00:00
+[2026-06-07T17:53:39.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.048 seconds
+[2026-06-07T17:54:09.499+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:09.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:54:09.506+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:09.505+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:09.527+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:09.614+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:09.614+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:54:09.623+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:09.623+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-06 00:00:00+00:00, run_after=2026-06-07 00:00:00+00:00
+[2026-06-07T17:54:09.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.146 seconds
+[2026-06-07T17:54:40.197+0000] {processor.py:161} INFO - Started process (PID=62) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:40.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:54:40.205+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:40.204+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:40.223+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:54:40.248+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:40.248+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:54:40.269+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:54:40.269+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-06 00:00:00+00:00, run_after=2026-06-07 00:00:00+00:00
+[2026-06-07T17:54:40.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.100 seconds
+[2026-06-07T17:55:10.618+0000] {processor.py:161} INFO - Started process (PID=64) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:10.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:55:10.626+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:10.625+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:10.642+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:10.677+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:10.677+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:55:10.692+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:10.692+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-06 00:00:00+00:00, run_after=2026-06-07 00:00:00+00:00
+[2026-06-07T17:55:10.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.093 seconds
+[2026-06-07T17:55:41.316+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:41.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:55:41.321+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:41.320+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:41.335+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:55:41.363+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:41.362+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:55:41.377+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:55:41.376+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-06 00:00:00+00:00, run_after=2026-06-07 00:00:00+00:00
+[2026-06-07T17:55:41.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.113 seconds
+[2026-06-07T17:56:12.518+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:12.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:56:12.532+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:12.530+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:12.553+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:12.585+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:12.585+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:56:12.598+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:12.598+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:56:12.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.106 seconds
+[2026-06-07T17:56:42.887+0000] {processor.py:161} INFO - Started process (PID=85) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:42.889+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:56:42.899+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:42.893+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:42.925+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:56:42.976+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:42.975+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:56:42.996+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:56:42.996+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:56:43.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.135 seconds
+[2026-06-07T17:57:13.226+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:13.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:57:13.233+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:13.230+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:13.254+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:13.278+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:13.277+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:57:13.294+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:13.294+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:57:13.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.094 seconds
+[2026-06-07T17:57:43.624+0000] {processor.py:161} INFO - Started process (PID=87) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:43.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:57:43.632+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:43.631+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:43.654+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:57:43.676+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:43.676+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:57:43.689+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:57:43.689+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:57:43.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.100 seconds
+[2026-06-07T17:58:14.017+0000] {processor.py:161} INFO - Started process (PID=88) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:14.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:58:14.031+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:14.026+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:14.051+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:14.067+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:14.067+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:58:14.081+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:14.080+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:58:14.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.087 seconds
+[2026-06-07T17:58:44.358+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:44.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:58:44.365+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:44.364+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:44.387+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:58:44.409+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:44.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:58:44.422+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:58:44.421+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:58:44.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.087 seconds
+[2026-06-07T17:59:14.787+0000] {processor.py:161} INFO - Started process (PID=90) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:14.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:59:14.793+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:14.792+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:14.807+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:14.831+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:14.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:59:14.845+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:14.845+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:59:14.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.079 seconds
+[2026-06-07T17:59:45.223+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:45.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T17:59:45.248+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:45.245+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:45.267+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T17:59:45.291+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:45.290+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T17:59:45.304+0000] {logging_mixin.py:188} INFO - [2026-06-07T17:59:45.304+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T17:59:45.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.141 seconds
+[2026-06-07T18:00:15.617+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:15.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:00:15.629+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:15.628+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:15.650+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:15.689+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:15.689+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:00:15.706+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:15.706+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:00:15.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.155 seconds
+[2026-06-07T18:00:46.007+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:46.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:00:46.016+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:46.015+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:46.049+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:00:46.084+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:46.084+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:00:46.097+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:00:46.097+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:00:46.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.117 seconds
+[2026-06-07T18:01:16.299+0000] {processor.py:161} INFO - Started process (PID=112) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:16.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:01:16.313+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:16.308+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:16.345+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:16.375+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:16.375+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:01:16.389+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:16.389+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:01:16.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.123 seconds
+[2026-06-07T18:01:46.990+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:46.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:01:47.001+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:46.999+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:47.034+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:01:47.073+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:47.072+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:01:47.087+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:01:47.087+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:01:47.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.141 seconds
+[2026-06-07T18:02:17.203+0000] {processor.py:161} INFO - Started process (PID=114) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:17.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:02:17.213+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:17.212+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:17.235+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:17.265+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:17.265+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:02:17.284+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:17.284+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:02:17.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.115 seconds
+[2026-06-07T18:02:47.575+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:47.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:02:47.585+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:47.584+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:47.610+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:02:47.636+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:47.636+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:02:47.652+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:02:47.652+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:02:47.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.098 seconds
+[2026-06-07T18:03:18.230+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:18.232+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:03:18.237+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:18.235+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:18.269+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:18.301+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:18.301+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:03:18.326+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:18.326+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:03:18.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.172 seconds
+[2026-06-07T18:03:48.783+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:48.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:03:48.794+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:48.793+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:48.825+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:03:48.856+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:48.855+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:03:48.878+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:03:48.878+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:03:48.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.123 seconds
+[2026-06-07T18:04:19.358+0000] {processor.py:161} INFO - Started process (PID=118) to work on /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:04:19.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/monitoring_dag.py for tasks to queue
+[2026-06-07T18:04:19.373+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:04:19.371+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:04:19.406+0000] {processor.py:840} INFO - DAG(s) 'monitoring_and_retraining' retrieved from /opt/airflow/dags/monitoring_dag.py
+[2026-06-07T18:04:19.430+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:04:19.430+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-07T18:04:19.443+0000] {logging_mixin.py:188} INFO - [2026-06-07T18:04:19.443+0000] {dag.py:3954} INFO - Setting next_dagrun for monitoring_and_retraining to 2026-06-07 00:00:00+00:00, run_after=2026-06-08 00:00:00+00:00
+[2026-06-07T18:04:19.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/monitoring_dag.py took 0.113 seconds

@@ -1,0 +1,82 @@
+{
+  "date": "20260607",
+  "dataset_drift": true,
+  "drift_share": 1.0,
+  "n_drifted_features": 7,
+  "n_features": 7,
+  "drifted_features": [
+    "qty_lag_1",
+    "qty_lag_7",
+    "qty_lag_30",
+    "qty_rolling_avg_7",
+    "qty_rolling_avg_30",
+    "qty_rolling_std_7",
+    "daily_revenue"
+  ],
+  "retrain_needed": true,
+  "feature_stats": {
+    "qty_lag_1": {
+      "ks_statistic": 0.0349,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 25.3335,
+      "curr_mean": 22.25,
+      "ref_std": 90.9626,
+      "curr_std": 65.0452
+    },
+    "qty_lag_7": {
+      "ks_statistic": 0.0354,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 25.4557,
+      "curr_mean": 22.2306,
+      "ref_std": 94.4624,
+      "curr_std": 64.0338
+    },
+    "qty_lag_30": {
+      "ks_statistic": 0.0318,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 26.286,
+      "curr_mean": 23.6792,
+      "ref_std": 101.0787,
+      "curr_std": 246.1447
+    },
+    "qty_rolling_avg_7": {
+      "ks_statistic": 0.0476,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 25.3818,
+      "curr_mean": 22.2262,
+      "ref_std": 43.808,
+      "curr_std": 33.5848
+    },
+    "qty_rolling_avg_30": {
+      "ks_statistic": 0.058,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 25.6951,
+      "curr_mean": 22.5001,
+      "ref_std": 32.9746,
+      "curr_std": 28.2222
+    },
+    "qty_rolling_std_7": {
+      "ks_statistic": 0.0423,
+      "p_value": 0.0,
+      "drifted": true,
+      "ref_mean": 28.7905,
+      "curr_mean": 24.5135,
+      "ref_std": 83.5109,
+      "curr_std": 54.2118
+    },
+    "daily_revenue": {
+      "ks_statistic": 0.0076,
+      "p_value": 0.0007,
+      "drifted": true,
+      "ref_mean": 41.4777,
+      "curr_mean": 43.0797,
+      "ref_std": 157.1689,
+      "curr_std": 132.2237
+    }
+  }
+}
