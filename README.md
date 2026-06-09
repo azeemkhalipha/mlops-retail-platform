@@ -38,16 +38,16 @@ mlops-retail-platform/
 └── reports/               # Generated drift reports
 ## Models compared
 
-                        Model    MAE           RMSE         R2
-                     catboost    21.179307     69.993012    0.108569
-                     lightgbm    21.294817     70.947276    0.084096
-                      xgboost    21.571503     74.016277    0.003143
-            gradient_boosting    21.379369     73.331745    0.021497
-                random_forest    21.506002     73.382860    0.020132
-             lasso_regression    21.168719     70.006463    0.108227
-             ridge_regression    21.168455     70.006323    0.108230
-            linear_regression    21.168455     70.006323    0.108230
-
+| Model | MAE | RMSE | R2 |
+|---|---|---|---|
+| Linear Regression | 21.17 | 70.01 | 0.108 |
+| Ridge Regression | 21.17 | 70.01 | 0.108 |
+| Lasso Regression | 21.20 | 70.10 | 0.107 |
+| Random Forest | — | — | — |
+| Gradient Boosting | — | — | — |
+| XGBoost | 21.54 | 73.21 | 0.025 |
+| LightGBM | 21.30 | 71.02 | 0.082 |
+| CatBoost | — | — | — |
 
 ## Running the project
 
@@ -89,7 +89,7 @@ streamlit run src/dashboard/app.py
 pytest tests/ -v
 ```
 
-## API
+## API endpoints
 
 | Endpoint | Method | Description |
 |---|---|---|
@@ -107,5 +107,5 @@ pytest tests/ -v
 - **Lag features over raw features** — lag_1, lag_7, lag_30 carry significantly more signal for time-series forecasting than raw date columns
 - **KS test for drift** — non-parametric, no distribution assumptions, works on any feature type
 - **Mocked model in CI** — tests pass without the pickle file in the repo, keeping the CI environment clean
-- **Transparent Plotly backgrounds** — dashboard charts inherit Streamlit's theme so they work in both light and dark mode
+- **Transparent Plotly backgrounds** — dashboard charts inherit Streamlit theme, works in light and dark mode
 - **SequentialExecutor in Airflow** — lightweight for local dev; production would use KubernetesExecutor
