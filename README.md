@@ -1,17 +1,111 @@
 ![CI Pipeline](https://github.com/azeemkhalipha/mlops-retail-platform/actions/workflows/ci.yml/badge.svg)
 
-# MLOps Retail Demand Forecast Platform
+# MLOps Retail Platform
 
-End-to-end MLOps platform for retail demand forecasting — PySpark feature engineering, 8-model MLflow experiment tracking, FastAPI serving, Docker, GitHub Actions CI/CD, drift monitoring, and Streamlit dashboard.
+End-to-end MLOps platform for retail demand forecasting. Ingests 1M+ retail transactions, engineers features with PySpark, trains and tracks 8 models with MLflow, serves predictions via a REST API, monitors for data drift daily, and automatically retrains when the model degrades.
 
-## Tech Stack
+## Architecture
 
-| Layer | Tool |
-|---|---|
-| Feature Engineering | PySpark |
-| Experiment Tracking | MLflow (8 models compared) |
-| Model Serving | FastAPI + Docker |
-| CI/CD | GitHub Actions |
-| Drift Monitoring | KS Test + scipy |
-| Orchestration | Apache Airflow |
-| Dashboard | Streamlit + Plotly |
+![Architecture](docs/architecture.png)
+
+## Stack
+
+| Layer | Tool | Purpose |
+|---|---|---|
+| Feature engineering | PySpark | Process 1M+ rows, build lag and rolling features |
+| Experiment tracking | MLflow | Compare 8 models, register best |
+| Model training | scikit-learn, XGBoost, LightGBM, CatBoost | Demand forecasting |
+| Model serving | FastAPI + Docker | REST API with /predict and /batch_predict |
+| CI/CD | GitHub Actions | Tests and Docker build on every push |
+| Drift monitoring | KS test (scipy) | Statistical drift detection across 7 features |
+| Orchestration | Apache Airflow | Daily drift check with auto retraining |
+| Dashboard | Streamlit + Plotly | Live monitoring with retraining trigger |
+
+## Project structure
+mlops-retail-platform/
+├── src/
+│   ├── features/          # PySpark feature engineering
+│   ├── training/          # Retraining script with MLflow logging
+│   ├── serving/           # FastAPI app, model loader, Pydantic schemas
+│   ├── monitoring/        # KS test drift detector, HTML/JSON reports
+│   └── dashboard/         # Streamlit monitoring dashboard
+├── airflow/
+│   └── dags/              # check_drift → decide → retrain/skip
+├── tests/                 # pytest suite with mocked model
+├── .github/workflows/     # GitHub Actions CI pipeline
+├── Dockerfile
+├── notebooks/             # PySpark feature exploration
+└── reports/               # Generated drift reports
+## Models compared
+
+                        Model    MAE           RMSE         R2
+                     catboost    21.179307     69.993012    0.108569
+                     lightgbm    21.294817     70.947276    0.084096
+                      xgboost    21.571503     74.016277    0.003143
+            gradient_boosting    21.379369     73.331745    0.021497
+                random_forest    21.506002     73.382860    0.020132
+             lasso_regression    21.168719     70.006463    0.108227
+             ridge_regression    21.168455     70.006323    0.108230
+            linear_regression    21.168455     70.006323    0.108230
+   linear_regression_baseline    21.168455     70.006323    0.108230
+
+## Running the project
+
+**Feature engineering:**
+```bash
+conda activate mlops
+jupyter notebook notebooks/01_feature_engineering.ipynb
+```
+
+**Drift detection:**
+```bash
+python src/monitoring/drift_detector.py
+```
+
+**Retrain model:**
+```bash
+python src/training/retrain.py
+```
+
+**Start API:**
+```bash
+cd src/serving
+uvicorn app:app --reload --port 8000
+```
+
+**Start API with Docker:**
+```bash
+docker build -t retail-demand-api:v1 .
+docker run -p 8001:8000 retail-demand-api:v1
+```
+
+**Run dashboard:**
+```bash
+streamlit run src/dashboard/app.py
+```
+
+**Run tests:**
+```bash
+pytest tests/ -v
+```
+
+## API
+
+| Endpoint | Method | Description |
+|---|---|---|
+| /health | GET | Model status |
+| /predict | POST | Single demand prediction |
+| /batch_predict | POST | Bulk predictions |
+| /docs | GET | Swagger UI |
+
+## Dataset
+
+[Online Retail II](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) — 1M+ UK retail transactions, 2009–2011.
+
+## Key decisions
+
+- **Lag features over raw features** — lag_1, lag_7, lag_30 carry significantly more signal for time-series forecasting than raw date columns
+- **KS test for drift** — non-parametric, no distribution assumptions, works on any feature type
+- **Mocked model in CI** — tests pass without the pickle file in the repo, keeping the CI environment clean
+- **Transparent Plotly backgrounds** — dashboard charts inherit Streamlit's theme so they work in both light and dark mode
+- **SequentialExecutor in Airflow** — lightweight for local dev; production would use KubernetesExecutor
