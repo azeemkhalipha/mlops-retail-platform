@@ -40,14 +40,14 @@ mlops-retail-platform/
 
 | Model | MAE | RMSE | R2 |
 |---|---|---|---|
-| Linear Regression | 21.17 | 70.01 | 0.108 |
-| Ridge Regression | 21.17 | 70.01 | 0.108 |
-| Lasso Regression | 21.20 | 70.10 | 0.107 |
-| Random Forest | — | — | — |
-| Gradient Boosting | — | — | — |
-| XGBoost | 21.54 | 73.21 | 0.025 |
-| LightGBM | 21.30 | 71.02 | 0.082 |
-| CatBoost | — | — | — |
+| Linear Regression | 21.17 | 70.01 | 0.1082 |
+| Ridge Regression | 21.17 | 70.01 | 0.1082 |
+| Lasso Regression | 21.17 | 70.01 | 0.1082 |
+| **CatBoost** | **21.18** | **69.99** | **0.1086** |
+| LightGBM | 21.29 | 70.95 | 0.0841 |
+| Gradient Boosting | 21.38 | 73.33 | 0.0215 |
+| Random Forest | 21.51 | 73.38 | 0.0201 |
+| XGBoost | 21.57 | 74.02 | 0.0031 |
 
 ## Running the project
 
