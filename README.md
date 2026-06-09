@@ -47,7 +47,7 @@ mlops-retail-platform/
              lasso_regression    21.168719     70.006463    0.108227
              ridge_regression    21.168455     70.006323    0.108230
             linear_regression    21.168455     70.006323    0.108230
-   linear_regression_baseline    21.168455     70.006323    0.108230
+
 
 ## Running the project
 
