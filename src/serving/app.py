@@ -119,3 +119,65 @@ def batch_predict(request: BatchPredictionRequest):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# SHAP explanation endpoint
+@app.post("/explain")
+def explain(request: PredictionRequest):
+    """
+    Explain a single prediction using SHAP values.
+    Returns feature contributions showing why the model
+    predicted a specific demand quantity.
+    """
+    try:
+        import sys
+        import os
+        project_root = os.getenv(
+            "PROJECT_ROOT",
+            "/Users/azeemkhalipha/mlops-retail-platform"
+        )
+        sys.path.insert(0, project_root)
+
+        import pandas as pd
+        from src.explainability.explainer import explain_prediction
+
+        features      = {col: getattr(request, col) for col in FEATURE_COLS}
+        features_path = f"{project_root}/data/features"
+        df_bg = pd.read_parquet(f"{features_path}/ml_features")
+        df_bg = df_bg[FEATURE_COLS].dropna().sample(200, random_state=42)
+
+        result = explain_prediction(features, df_bg)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# SHAP explanation endpoint
+@app.post("/explain")
+def explain(request: PredictionRequest):
+    """
+    Explain a single prediction using SHAP values.
+    Returns feature contributions showing why the model
+    predicted a specific demand quantity.
+    """
+    try:
+        import sys
+        import os
+        project_root = os.getenv(
+            "PROJECT_ROOT",
+            "/Users/azeemkhalipha/mlops-retail-platform"
+        )
+        sys.path.insert(0, project_root)
+
+        import pandas as pd
+        from src.explainability.explainer import explain_prediction
+
+        features      = {col: getattr(request, col) for col in FEATURE_COLS}
+        features_path = f"{project_root}/data/features"
+        df_bg = pd.read_parquet(f"{features_path}/ml_features")
+        df_bg = df_bg[FEATURE_COLS].dropna().sample(200, random_state=42)
+
+        result = explain_prediction(features, df_bg)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

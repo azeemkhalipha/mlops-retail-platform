@@ -328,3 +328,68 @@ import sys as _sys
 _sys.path.insert(0, PROJECT_ROOT)
 from chat_component import render_floating_chat
 render_floating_chat(PROJECT_ROOT)
+
+
+# SHAP Explainability section
+st.markdown("---")
+st.markdown("##### Prediction explainer")
+st.caption("Enter feature values to see why the model makes a specific prediction.")
+
+with st.expander("Try a prediction explanation"):
+    col_a, col_b = st.columns(2)
+    with col_a:
+        lag1    = st.number_input("qty_lag_1",          value=10.0)
+        lag7    = st.number_input("qty_lag_7",          value=8.0)
+        lag30   = st.number_input("qty_lag_30",         value=9.0)
+        avg7    = st.number_input("qty_rolling_avg_7",  value=9.5)
+    with col_b:
+        avg30   = st.number_input("qty_rolling_avg_30", value=9.0)
+        std7    = st.number_input("qty_rolling_std_7",  value=1.2)
+        revenue = st.number_input("daily_revenue",      value=45.0)
+
+    if st.button("Explain this prediction"):
+        with st.spinner("Computing SHAP values..."):
+            import sys
+            sys.path.insert(0, PROJECT_ROOT)
+            import pandas as pd
+            from src.explainability.explainer import explain_prediction
+
+            feats = {
+                "qty_lag_1":          lag1,
+                "qty_lag_7":          lag7,
+                "qty_lag_30":         lag30,
+                "qty_rolling_avg_7":  avg7,
+                "qty_rolling_avg_30": avg30,
+                "qty_rolling_std_7":  std7,
+                "daily_revenue":      revenue
+            }
+
+            df_bg = pd.read_parquet(
+                f"{PROJECT_ROOT}/data/features/ml_features"
+            )
+            df_bg = df_bg[
+                ["qty_lag_1","qty_lag_7","qty_lag_30",
+                 "qty_rolling_avg_7","qty_rolling_avg_30",
+                 "qty_rolling_std_7","daily_revenue"]
+            ].dropna().sample(200, random_state=42)
+
+            result = explain_prediction(feats, df_bg)
+
+        st.markdown(f"**Predicted demand:** {result['prediction']} units")
+        st.markdown(f"**Explanation:** {result['explanation']}")
+
+        contrib_data = [
+            {
+                "Feature":        feat,
+                "Feature value":  info["feature_value"],
+                "SHAP value":     info["shap_value"],
+                "Direction":      info["direction"],
+                "Impact":         info["impact"]
+            }
+            for feat, info in result["feature_contributions"].items()
+        ]
+        st.dataframe(
+            pd.DataFrame(contrib_data),
+            use_container_width=True,
+            hide_index=True
+        )
