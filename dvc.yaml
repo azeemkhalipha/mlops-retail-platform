@@ -1,0 +1,27 @@
+stages:
+  featurize:
+    cmd: python notebooks/run_features.py
+    deps:
+      - data/raw/online_retail_II.csv
+      - notebooks/run_features.py
+    outs:
+      - data/features/ml_features
+      - data/features/customer_features
+
+  train:
+    cmd: python src/training/retrain.py
+    deps:
+      - data/features/ml_features
+      - src/training/retrain.py
+    outs:
+      - models/demand_forecast_v1.pkl
+
+  evaluate:
+    cmd: python src/evaluation/evaluate.py
+    deps:
+      - models/demand_forecast_v1.pkl
+      - data/features/ml_features
+      - src/evaluation/evaluate.py
+    metrics:
+      - reports/metrics.json:
+          cache: false
