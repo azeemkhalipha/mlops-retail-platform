@@ -1,0 +1,48 @@
+# Environment
+.env
+.env.docker
+
+# Mac
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Data files — tracked by DVC
+data/raw/*.csv
+data/features/
+data/predictions/
+*.parquet
+
+# Models — tracked by DVC
+models/*.pkl
+
+# MLflow — local experiment tracking
+mlruns/
+
+# CatBoost training logs
+catboost_info/
+
+# Reports — generated files
+reports/*.html
+reports/*.json
+reports/shap/
+
+# DVC cache
+.dvc/cache/
+.dvc/tmp/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Chroma vector store
+chroma_db/
+
+# Notebooks output
+notebooks/*.csv
