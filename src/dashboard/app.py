@@ -319,3 +319,11 @@ st.caption(
     "Built with PySpark · MLflow · FastAPI · "
     "Docker · Airflow · Streamlit · GitHub Actions"
 )
+
+
+
+# RAG chat component
+import sys as _sys
+_sys.path.insert(0, PROJECT_ROOT)
+from chat_component import render_chat
+render_chat(PROJECT_ROOT)
