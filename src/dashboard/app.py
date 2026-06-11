@@ -323,7 +323,8 @@ st.caption(
 
 
 # RAG chat component
+# Floating RAG chat widget
 import sys as _sys
 _sys.path.insert(0, PROJECT_ROOT)
-from chat_component import render_chat
-render_chat(PROJECT_ROOT)
+from chat_component import render_floating_chat
+render_floating_chat(PROJECT_ROOT)

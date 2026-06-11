@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/cd2067524f6c4a8891b6a03bda6a6a3a/artifacts
+end_time: 1781201028815
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: cd2067524f6c4a8891b6a03bda6a6a3a
+run_name: retrain_20260611_233345
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781201025355
+status: 3
+tags: []
+user_id: azeemkhalipha
