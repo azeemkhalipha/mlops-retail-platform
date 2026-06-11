@@ -1,0 +1,10 @@
+artifact_location: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/models/m-e6cfca3647d1431fb9a5a17d454158ac/artifacts
+creation_timestamp: 1781201996852
+experiment_id: '216388892613082167'
+last_updated_timestamp: 1781201999633
+model_id: m-e6cfca3647d1431fb9a5a17d454158ac
+model_type: null
+name: model
+source_run_id: acf557b344524ac4a72ae03506576f97
+status: 2
+status_message: null

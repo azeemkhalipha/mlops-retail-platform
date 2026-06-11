@@ -1,0 +1,5 @@
+outs:
+- md5: 752387ce32ab2017ec4ad36fd847013e
+  size: 732
+  hash: md5
+  path: demand_forecast_v1.pkl

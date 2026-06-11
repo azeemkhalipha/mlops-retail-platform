@@ -1,0 +1,6 @@
+outs:
+- md5: 6b40756dfbdd21d0c56863e3e3038018.dir
+  size: 152826
+  nfiles: 4
+  hash: md5
+  path: customer_features

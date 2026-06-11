@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/azeemkhalipha/mlops-retail-platform/mlruns/216388892613082167/9423c5e4b6d04e7e8420d379cc001c10/artifacts
+end_time: 1781201925170
+entry_point_name: ''
+experiment_id: '216388892613082167'
+lifecycle_stage: active
+run_id: 9423c5e4b6d04e7e8420d379cc001c10
+run_name: xgboost_optuna_tuned
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781201921130
+status: 3
+tags: []
+user_id: azeemkhalipha
