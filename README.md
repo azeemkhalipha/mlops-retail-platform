@@ -48,6 +48,8 @@ mlops-retail-platform/
 | Gradient Boosting | 21.38 | 73.33 | 0.0215 |
 | Random Forest | 21.51 | 73.38 | 0.0201 |
 | XGBoost | 21.57 | 74.02 | 0.0031 |
+| **XGBoost (Optuna tuned)** | **21.19** | **69.86** | **0.1120** |
+| CatBoost (Optuna tuned) | 21.18 | 71.06 | 0.0813 |
 
 ## Running the project
 
