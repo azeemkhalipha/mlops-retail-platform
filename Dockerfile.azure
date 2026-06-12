@@ -11,19 +11,9 @@ RUN pip install --no-cache-dir \
     pyarrow python-dotenv pydantic mlflow
 
 COPY src/serving/ ./src/serving/
+COPY scripts/create_model.py ./scripts/create_model.py
 
-RUN python3 -c "
-import pickle, os
-from sklearn.linear_model import LinearRegression
-import numpy as np
-os.makedirs('models', exist_ok=True)
-X = np.random.rand(1000, 7)
-y = np.random.rand(1000) * 50
-model = LinearRegression().fit(X, y)
-with open('models/demand_forecast_v1.pkl', 'wb') as f:
-    pickle.dump(model, f)
-print('Model baked into image')
-"
+RUN python3 scripts/create_model.py
 
 RUN echo "PROJECT_ROOT=/app" > .env
 
