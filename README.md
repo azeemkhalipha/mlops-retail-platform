@@ -1,5 +1,7 @@
 ![CI Pipeline](https://github.com/azeemkhalipha/mlops-retail-platform/actions/workflows/ci.yml/badge.svg)
 
+**Live API:** https://mlops-retail-platform.onrender.com/docs
+
 # MLOps Retail Platform
 
 End-to-end MLOps platform for retail demand forecasting. Ingests 1M+ retail transactions, engineers features with PySpark, trains and compares 8 models with MLflow, serves predictions via REST API, monitors data drift daily, auto-retrains on drift detection, explains predictions with SHAP, tunes hyperparameters with Optuna, versions data with DVC, and provides a natural language assistant powered by a local LLM.
