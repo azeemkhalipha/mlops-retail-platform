@@ -10,6 +10,35 @@ End-to-end MLOps platform for retail demand forecasting. Ingests 1M+ retail tran
 
 ![Architecture](docs/architecture.png)
 
+### Component breakdown
+
+**Data layer**
+Raw CSV (1M+ retail transactions) → DVC data versioning → PySpark feature engineering → Parquet feature store
+
+**Training layer**
+8 models trained and compared in MLflow: Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting, XGBoost, LightGBM, CatBoost. Optuna hyperparameter tuning ran 50 trials — XGBoost RMSE improved 5.6% from 74.02 to 69.86.
+
+**Serving layer**
+Best model served via FastAPI with three endpoints: `/predict`, `/batch_predict`, `/explain`. Containerised with Docker and deployed to Render — live at https://mlops-retail-platform.onrender.com/docs
+
+**Explainability layer**
+SHAP KernelExplainer computes feature contributions for every prediction. Shows which features pushed the forecast up or down and by how much.
+
+**Monitoring layer**
+Daily Kolmogorov-Smirnov test compares reference vs current feature distributions across all 7 features. Saves HTML report and JSON summary to reports/.
+
+**Orchestration layer**
+Airflow DAG runs daily: check_drift → decide_retrain → retrain_model or skip_retrain. Retraining triggered automatically when drift share exceeds 50%.
+
+**RAG assistant**
+Drift reports and MLflow metadata indexed into ChromaDB using sentence-transformers embeddings. Llama 3.2 runs locally via Ollama — zero cost, no API key. Floating chat widget in bottom right of dashboard.
+
+**Dashboard**
+Streamlit app with drift history charts, KS statistics, feature distribution comparison, prediction explainer, and floating RAG chat assistant.
+
+**CI/CD**
+GitHub Actions runs on every push: pytest suite (6 tests) → Docker build → deploy to Render automatically.
+
 ## Stack
 
 | Layer | Tool | Purpose |
