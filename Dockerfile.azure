@@ -1,0 +1,32 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir \
+    fastapi uvicorn scikit-learn pandas \
+    pyarrow python-dotenv pydantic mlflow
+
+COPY src/serving/ ./src/serving/
+
+RUN python3 -c "
+import pickle, os
+from sklearn.linear_model import LinearRegression
+import numpy as np
+os.makedirs('models', exist_ok=True)
+X = np.random.rand(1000, 7)
+y = np.random.rand(1000) * 50
+model = LinearRegression().fit(X, y)
+with open('models/demand_forecast_v1.pkl', 'wb') as f:
+    pickle.dump(model, f)
+print('Model baked into image')
+"
+
+RUN echo "PROJECT_ROOT=/app" > .env
+
+EXPOSE 8000
+
+CMD ["uvicorn", "src.serving.app:app", "--host", "0.0.0.0", "--port", "8000"]
